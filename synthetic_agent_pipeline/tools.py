@@ -122,7 +122,8 @@ class ToolRuntime:
             return {"error": {"code": exc.code, "message": str(exc)}}
         except (OSError, UnicodeError, csv.Error) as exc:
             return {"error": {"code": "input_error", "message": str(exc).replace(str(self.workspace), "<workspace>")}}
-        except sqlite3.Error as exc:
+        except (sqlite3.Error, sqlite3.Warning) as exc:
+            # Python 3.10 raises Warning for multiple statements; it is not an Error subclass.
             code = "timeout" if time.monotonic() >= self.deadline else "sql_error"
             return {"error": {"code": code, "message": "Task deadline exceeded" if code == "timeout" else str(exc)}}
         except (ValueError, TypeError, OverflowError, RecursionError):
