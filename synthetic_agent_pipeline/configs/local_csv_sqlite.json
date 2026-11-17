@@ -1,0 +1,77 @@
+{
+  "framework": {
+    "name": "local_csv_sqlite",
+    "description": "Проверяемые агентские задачи на нескольких локальных CSV и SQLite с целочисленными результатами."
+  },
+  "tools": ["list_files", "read_csv", "inspect_database", "query_sql", "write_result"],
+  "generation": {
+    "family_strategy": "round_robin",
+    "difficulty_strategy": "per_family_round_robin",
+    "family_order": ["table_reconciliation", "inventory_discrepancies", "sales_summary"],
+    "difficulty_order": ["easy", "medium", "hard"],
+    "difficulty_parameters": {
+      "easy": {"rows": 12, "changes": 3},
+      "medium": {"rows": 24, "changes": 5},
+      "hard": {"rows": 48, "changes": 8}
+    }
+  },
+  "validation_families": ["sales_summary"],
+  "problem_types": {
+    "framework": "local_csv_sqlite",
+    "tree": {
+      "id": "root",
+      "label": "Локальные табличные данные",
+      "children": [
+        {
+          "id": "reconciliation",
+          "label": "Сверка таблиц",
+          "children": [
+            {
+              "id": "table_reconciliation",
+              "label": "Сверка счетов и платежей",
+              "persona": "Бухгалтер сверяет ожидаемые суммы счетов с фактическими платежами и составляет список расхождений."
+            }
+          ]
+        },
+        {
+          "id": "audit",
+          "label": "Поиск расхождений",
+          "children": [
+            {
+              "id": "inventory_discrepancies",
+              "label": "Аудит складских остатков",
+              "persona": "Складской аналитик проверяет снимок остатков по начальному состоянию и журналу движений."
+            }
+          ]
+        },
+        {
+          "id": "reporting",
+          "label": "Построение сводки",
+          "children": [
+            {
+              "id": "sales_summary",
+              "label": "Сводка оплаченных продаж по регионам",
+              "persona": "Аналитик продаж объединяет заказы и справочник клиентов, чтобы рассчитать выручку по регионам."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "adaptation": "Own deterministic data builders; framework/persona/problem-tree/difficulty organization and query export fields follow the inspected Gyrfalcon approach.",
+    "sources": [
+      "github/NexGAP/Gyrfalcon/core/pipeline.py",
+      "github/NexGAP/Gyrfalcon/frameworks/menu_margin_pricing_system/framework_config.yaml",
+      "github/NexGAP/Gyrfalcon/frameworks/menu_margin_pricing_system/config.json",
+      "github/NexGAP/Gyrfalcon/frameworks/menu_margin_pricing_system/problem_types.json",
+      "github/NexGAP/Gyrfalcon/frameworks/menu_margin_pricing_system/persona.jsonl",
+      "github/NexGAP/Gyrfalcon/frameworks/pitlane_proof/framework_config.yaml",
+      "github/NexGAP/Gyrfalcon/frameworks/pitlane_proof/config.json",
+      "github/NexGAP/Gyrfalcon/frameworks/pitlane_proof/problem_types.json",
+      "github/NexGAP/Gyrfalcon/frameworks/pitlane_proof/persona.jsonl",
+      "github/NexGAP/Gyrfalcon/llm_interface/query_generator.py:QueryExporter"
+    ]
+  }
+}

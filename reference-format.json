@@ -1,0 +1,303 @@
+{
+  "inspection": "Only the first 5 records of each source were read via readline; no original task text or values are copied here. Findings describe this sample, not the entire dataset.",
+  "files": {
+    "tool_calling.jsonl": {
+      "relative_path": "huggingface/dataset/nex-agi/agent-sft/tool_calling.jsonl",
+      "file_size_bytes": 524665103,
+      "sample_records": 5,
+      "sample_prefix_sha256": "0953a8a63ad87a9f2340d7143d4fd3f9d5540e3db101db14033a37f1ca99aa12",
+      "observed_message_shapes_by_role": {
+        "system": [
+          {
+            "role": "str",
+            "content": "str",
+            "tool_calls": "list"
+          }
+        ],
+        "user": [
+          {
+            "role": "str",
+            "content": "str",
+            "tool_calls": "list"
+          }
+        ],
+        "assistant": [
+          {
+            "role": "str",
+            "content": "str",
+            "tool_calls": "list"
+          }
+        ],
+        "tool": [
+          {
+            "role": "str",
+            "tool_call_id": "str",
+            "content": "str",
+            "tool_calls": "list"
+          }
+        ]
+      },
+      "records": [
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 13,
+          "role_counts": {
+            "system": 1,
+            "user": 1,
+            "assistant": 3,
+            "tool": 8
+          },
+          "tools_count": 12,
+          "tool_calls_count": 8,
+          "tool_responses_count": 8,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 10,
+          "role_counts": {
+            "system": 1,
+            "user": 1,
+            "assistant": 4,
+            "tool": 4
+          },
+          "tools_count": 12,
+          "tool_calls_count": 4,
+          "tool_responses_count": 4,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 5,
+          "role_counts": {
+            "system": 1,
+            "user": 1,
+            "assistant": 2,
+            "tool": 1
+          },
+          "tools_count": 5,
+          "tool_calls_count": 1,
+          "tool_responses_count": 1,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 5,
+          "role_counts": {
+            "system": 1,
+            "user": 1,
+            "assistant": 2,
+            "tool": 1
+          },
+          "tools_count": 5,
+          "tool_calls_count": 1,
+          "tool_responses_count": 1,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 7,
+          "role_counts": {
+            "system": 1,
+            "user": 1,
+            "assistant": 3,
+            "tool": 2
+          },
+          "tools_count": 5,
+          "tool_calls_count": 2,
+          "tool_responses_count": 2,
+          "ids_link_once": true
+        }
+      ]
+    },
+    "agent.jsonl": {
+      "relative_path": "huggingface/dataset/nex-agi/agent-sft/agent.jsonl",
+      "file_size_bytes": 1667484497,
+      "sample_records": 5,
+      "sample_prefix_sha256": "de3284304ed846d1f8b26e2f67c1206b71b49fd73cc28992d31ef2fff34689cc",
+      "observed_message_shapes_by_role": {
+        "system": [
+          {
+            "role": "str",
+            "content": "str"
+          }
+        ],
+        "user": [
+          {
+            "role": "str",
+            "content": "str"
+          }
+        ],
+        "assistant": [
+          {
+            "role": "str",
+            "content": "str"
+          }
+        ]
+      },
+      "records": [
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 25,
+          "role_counts": {
+            "system": 1,
+            "user": 12,
+            "assistant": 12
+          },
+          "tools_count": 0,
+          "tool_calls_count": 0,
+          "tool_responses_count": 0,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 13,
+          "role_counts": {
+            "system": 1,
+            "user": 6,
+            "assistant": 6
+          },
+          "tools_count": 0,
+          "tool_calls_count": 0,
+          "tool_responses_count": 0,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 13,
+          "role_counts": {
+            "system": 1,
+            "user": 6,
+            "assistant": 6
+          },
+          "tools_count": 0,
+          "tool_calls_count": 0,
+          "tool_responses_count": 0,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 25,
+          "role_counts": {
+            "system": 1,
+            "user": 12,
+            "assistant": 12
+          },
+          "tools_count": 0,
+          "tool_calls_count": 0,
+          "tool_responses_count": 0,
+          "ids_link_once": true
+        },
+        {
+          "top_level_types": {
+            "messages": "list",
+            "tools": "list",
+            "uuid": "str",
+            "generator": "str"
+          },
+          "message_count": 23,
+          "role_counts": {
+            "system": 1,
+            "user": 11,
+            "assistant": 11
+          },
+          "tools_count": 0,
+          "tool_calls_count": 0,
+          "tool_responses_count": 0,
+          "ids_link_once": true
+        }
+      ]
+    }
+  },
+  "tool_calling_wire_format": {
+    "top_level": {
+      "messages": "list[message]",
+      "tools": "list[function_tool]",
+      "uuid": "string",
+      "generator": "string"
+    },
+    "all_sample_messages_have": "role:string, content:string, tool_calls:list (empty on non-calling messages)",
+    "assistant_call_message_content": "empty string in every sampled assistant message containing calls",
+    "tool_response_extra_field": "tool_call_id:string, referring to exactly one preceding call id",
+    "tool_call": {
+      "id": "string",
+      "type": "function",
+      "function": {
+        "name": "string",
+        "arguments": "JSON-encoded object string"
+      }
+    },
+    "tool_response_content": "JSON-encoded object string in every sampled tool response",
+    "function_tool": {
+      "type": "function",
+      "function": {
+        "name": "string",
+        "description": "string",
+        "parameters": {
+          "type": "object",
+          "properties": "object",
+          "required": "list[string]"
+        }
+      }
+    }
+  },
+  "agent_wire_format": {
+    "top_level_metadata": [
+      "uuid:string",
+      "generator:string"
+    ],
+    "tools": "empty list in 4 of 5 sampled rows; absent in 1 of 5",
+    "messages": "only role:string and content:string; alternating assistant/user after initial system; no structured tool_calls in this sample"
+  },
+  "compatibility_guidance": [
+    "Keep tools function arguments and tool response content as JSON-encoded strings, not nested objects.",
+    "For an exact tool_calling wire shape, normalize missing tool_calls to [] on every message and assistant content null to an empty string.",
+    "The reference contains uuid and generator top-level string metadata. A reader should permit these optional metadata fields; an exact exporter may include them deterministically.",
+    "Empty tool_calls on system/user/tool messages are normal in the reference and should be allowed; nonempty calls remain assistant-only.",
+    "Do not infer an equivalent structured-tool trace schema from agent.jsonl: sampled rows contain textual trajectories without structured tool calls."
+  ]
+}

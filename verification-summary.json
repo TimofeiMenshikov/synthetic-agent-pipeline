@@ -1,0 +1,46 @@
+{
+  "python": "3.13.12",
+  "sqlite": "3.50.4",
+  "tests": {
+    "passed": 52,
+    "failed": 0,
+    "log": "verification-tests.txt"
+  },
+  "runs": {
+    "nex20-clean": {
+      "generated": 20,
+      "accepted": 20,
+      "rejected": 0,
+      "splits": {
+        "train": 14,
+        "validation": 6
+      },
+      "generated_sha256": "dc022c32bd89b1460e286922788c8e94b9dc5d446f6a0f32c691607153d5b7ae",
+      "rejection_reasons": {},
+      "reference_format_verified": true
+    },
+    "nex20-reject": {
+      "generated": 20,
+      "accepted": 16,
+      "rejected": 4,
+      "splits": {
+        "train": 11,
+        "validation": 5
+      },
+      "generated_sha256": "dc022c32bd89b1460e286922788c8e94b9dc5d446f6a0f32c691607153d5b7ae",
+      "rejection_reasons": {
+        "result_mismatch": 4
+      },
+      "reference_format_verified": true
+    }
+  },
+  "reproducibility_verified": true,
+  "tool_call_links_verified": true,
+  "family_split_verified": true,
+  "accepted_only_export_verified": true,
+  "real_model_executed": false,
+  "source_archive_available": true,
+  "local_source_sample_records_per_file": 5,
+  "reference_format_verified": true,
+  "selected_source_files_unchanged": true
+}

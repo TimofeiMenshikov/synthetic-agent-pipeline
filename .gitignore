@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.env
+.env.*
+!.env.example
+artifacts/
+archive-preservation.json
+.DS_Store
+build/
+dist/

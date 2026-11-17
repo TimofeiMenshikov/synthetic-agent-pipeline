@@ -1,0 +1,57 @@
+test_check_jsonl_cli_reports_bad_schema_without_traceback (test_export.ExportTest.test_check_jsonl_cli_reports_bad_schema_without_traceback) ... ok
+test_dataset_accepts_optional_metadata_only_with_string_types (test_export.ExportTest.test_dataset_accepts_optional_metadata_only_with_string_types) ... ok
+test_dataset_checks_scalar_records_and_annotates_line_numbers (test_export.ExportTest.test_dataset_checks_scalar_records_and_annotates_line_numbers) ... ok
+test_empty_calls_on_all_roles_are_allowed_but_nonempty_are_assistant_only (test_export.ExportTest.test_empty_calls_on_all_roles_are_allowed_but_nonempty_are_assistant_only) ... ok
+test_failed_tools_and_missing_actions_are_rejected (test_export.ExportTest.test_failed_tools_and_missing_actions_are_rejected) ... ok
+test_first_two_reference_records_streamed_when_archive_is_available (test_export.ExportTest.test_first_two_reference_records_streamed_when_archive_is_available) ... ok
+test_global_duplicate_ids_and_interleaved_parallel_calls (test_export.ExportTest.test_global_duplicate_ids_and_interleaved_parallel_calls) ... ok
+test_malformed_tool_schemas_raise_validation_errors (test_export.ExportTest.test_malformed_tool_schemas_raise_validation_errors) ... ok
+test_only_accepted_export_and_whole_family_validation (test_export.ExportTest.test_only_accepted_export_and_whole_family_validation) ... ok
+test_orphan_duplicate_and_missing_responses (test_export.ExportTest.test_orphan_duplicate_and_missing_responses) ... ok
+test_parallel_calls_and_reverse_responses_are_valid (test_export.ExportTest.test_parallel_calls_and_reverse_responses_are_valid) ... ok
+test_scalar_messages_and_nested_calls_raise_validation_errors (test_export.ExportTest.test_scalar_messages_and_nested_calls_raise_validation_errors) ... ok
+test_serializer_matches_reference_wire_shape_without_mutating_api_trace (test_export.ExportTest.test_serializer_matches_reference_wire_shape_without_mutating_api_trace) ... ok
+test_unknown_names_and_bad_function_arguments (test_export.ExportTest.test_unknown_names_and_bad_function_arguments) ... ok
+test_declarative_framework_export_has_context_without_reference (test_generation.GenerationTests.test_declarative_framework_export_has_context_without_reference) ... ok
+test_framework_adaptation_preserves_seeded_inputs_and_references (test_generation.GenerationTests.test_framework_adaptation_preserves_seeded_inputs_and_references) ... ok
+test_invalid_json_duplicate_keys_and_missing_file_rejected (test_generation.GenerationTests.test_invalid_json_duplicate_keys_and_missing_file_rejected) ... ok
+test_reference_results_pass_and_wrong_results_fail (test_generation.GenerationTests.test_reference_results_pass_and_wrong_results_fail) ... ok
+test_refuses_nonempty_destination (test_generation.GenerationTests.test_refuses_nonempty_destination) ... ok
+test_seed_reproduces_all_files_including_sqlite (test_generation.GenerationTests.test_seed_reproduces_all_files_including_sqlite) ... ok
+test_complete_mock_accept_reject_export_and_reproduce (test_runner.RunnerTests.test_complete_mock_accept_reject_export_and_reproduce) ... ok
+test_full_teacher_http_path_uses_only_public_observations (test_runner.RunnerTests.test_full_teacher_http_path_uses_only_public_observations) ... ok
+test_invalid_config_fails_before_output_creation (test_runner.RunnerTests.test_invalid_config_fails_before_output_creation) ... ok
+test_parent_enforces_hard_deadline (test_runner.RunnerTests.test_parent_enforces_hard_deadline) ... ok
+test_step_limit_rejects_even_when_export_is_empty (test_runner.RunnerTests.test_step_limit_rejects_even_when_export_is_empty) ... ok
+test_compare_export_and_missing_source (test_sources.SourceTests.test_compare_export_and_missing_source) ... ok
+test_shape_rejects_our_previous_native_api_serialization (test_sources.SourceTests.test_shape_rejects_our_previous_native_api_serialization) ... ok
+test_stream_sample_stops_before_bad_third_line (test_sources.SourceTests.test_stream_sample_stops_before_bad_third_line) ... ok
+test_environment_precedence_and_defaults (test_teacher.TeacherTests.test_environment_precedence_and_defaults) ... ok
+test_http_error_body_is_closed (test_teacher.TeacherTests.test_http_error_body_is_closed) ... ok
+test_http_errors_never_echo_response (test_teacher.TeacherTests.test_http_errors_never_echo_response) ... ok
+test_large_or_truncated_response (test_teacher.TeacherTests.test_large_or_truncated_response) ... ok
+test_malformed_json_and_response (test_teacher.TeacherTests.test_malformed_json_and_response) ... ok
+test_payload_and_clean_message (test_teacher.TeacherTests.test_payload_and_clean_message) ... ok
+test_redirect_does_not_forward_credentials (test_teacher.TeacherTests.test_redirect_does_not_forward_credentials) ... ok
+test_time_budget_and_http_timeout (test_teacher.TeacherTests.test_time_budget_and_http_timeout) ... ok
+test_tool_calls_are_preserved_and_filtered (test_teacher.TeacherTests.test_tool_calls_are_preserved_and_filtered) ... ok
+test_bad_csv_and_file_size (test_tools.ToolsTest.test_bad_csv_and_file_size) ... ok
+test_deadline_stops_query_and_later_calls (test_tools.ToolsTest.test_deadline_stops_query_and_later_calls) ... ok
+test_normal_data_and_output_flow (test_tools.ToolsTest.test_normal_data_and_output_flow) ... ok
+test_output_file_symlink_is_rejected (test_tools.ToolsTest.test_output_file_symlink_is_rejected) ... ok
+test_paths_and_symlinks_are_rejected (test_tools.ToolsTest.test_paths_and_symlinks_are_rejected) ... ok
+test_sql_cannot_mutate_or_access_extensions (test_tools.ToolsTest.test_sql_cannot_mutate_or_access_extensions) ... ok
+test_strict_arguments_and_result_limits (test_tools.ToolsTest.test_strict_arguments_and_result_limits) ... ok
+test_empty_or_invalid_json_trace_is_rejected (test_traces.GenerationTraceTests.test_empty_or_invalid_json_trace_is_rejected) ... ok
+test_final_chain_validation_checks_tool_call_linkage (test_traces.GenerationTraceTests.test_final_chain_validation_checks_tool_call_linkage) ... ok
+test_inconsistent_history_and_tool_schemas_are_rejected (test_traces.GenerationTraceTests.test_inconsistent_history_and_tool_schemas_are_rejected) ... ok
+test_last_generation_exports_history_without_duplicate_prefixes (test_traces.GenerationTraceTests.test_last_generation_exports_history_without_duplicate_prefixes) ... ok
+test_malformed_snapshot_and_duplicate_steps_are_rejected (test_traces.GenerationTraceTests.test_malformed_snapshot_and_duplicate_steps_are_rejected) ... ok
+test_mixed_tasks_or_parent_agents_are_rejected (test_traces.GenerationTraceTests.test_mixed_tasks_or_parent_agents_are_rejected) ... ok
+test_snapshots_do_not_mutate_when_caller_appends (test_traces.GenerationTraceTests.test_snapshots_do_not_mutate_when_caller_appends) ... ok
+test_unfinished_last_turn_is_rejected (test_traces.GenerationTraceTests.test_unfinished_last_turn_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 6.644s
+
+OK
